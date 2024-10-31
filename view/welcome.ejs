@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+   
+</head>
+<body>
+    
+    <div class="container">
+        <form action="/addtask" method="post">
+            <div class="enter">
+                <input type="text" class="input" name="task">
+                <button type="submit" class="addbtn" >Add</button>
+            </div>
+        </form>
+      
+        <div class="list">
+            <ul>
+                <%  tasks.forEach(function(task) {  %>
+                    <li>
+                        <form action="/removetask" method="post">
+                            <%= task.task %>
+                            <input type="hidden" name="taskId" value= "<%= task._id %>" > 
+                            <button type="submit">Remove</button>
+                        </form>
+                    </li>
+                <% }); %>
+            </ul>
+            
+           
+        </div>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
