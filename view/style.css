@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Box */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Form Section */
+.enter {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #764ba2;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.addbtn {
+    background: #764ba2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.addbtn:hover {
+    background: #5a3e82;
+}
+
+/* Task List */
+.list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background: #f4f4f4;
+    padding: 12px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Remove Button */
+.list button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.list button:hover {
+    background-color: #c0392b;
+}
+
+/* No Tasks Message */
+.list li:first-child {
+    font-style: italic;
+    color: #888;
+}
+
+/* Logout Link */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #217dbb;
+    text-decoration: underline;
+}
